@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>FitLife | Elevate Your Fitness</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>FitLife</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Elevate Your Fitness Journey</h2>
+      <p>Discover high-quality products to help you reach your goals.</p>
+      <a href="#products" class="cta-btn">Shop Now</a>
+    </section>
+
+    <section id="products">
+      <h3>Featured Products</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?fit=crop&w=400&q=80" alt="Dumbbells">
+          <h4>Adjustable Dumbbells</h4>
+          <p>Perfect for strength training at home. 5-52 lbs adjustable weight.</p>
+          <span class="price">$129.99</span>
+          <button onclick="addToCart('Adjustable Dumbbells')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?fit=crop&w=400&q=80" alt="Yoga Mat">
+          <h4>Eco Yoga Mat</h4>
+          <p>Non-slip, eco-friendly mat for yoga and Pilates.</p>
+          <span class="price">$39.99</span>
+          <button onclick="addToCart('Eco Yoga Mat')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?fit=crop&w=400&q=80" alt="Resistance Bands">
+          <h4>Resistance Band Set</h4>
+          <p>Set of 5 bands for stretching, strength, and mobility.</p>
+          <span class="price">$19.99</span>
+          <button onclick="addToCart('Resistance Band Set')">Add to Cart</button>
+        </div>
+      </div>
+      <div id="cart-message"></div>
+    </section>
+
+    <section id="about">
+      <h3>About FitLife</h3>
+      <p>FitLife is dedicated to empowering your fitness journey. We provide high-quality, affordable equipment and gear for all levels. Whether you're a beginner or a pro, our products are designed to help you reach your goals.</p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact Us</h3>
+      <form id="contact-form" onsubmit="return showThanks()">
+        <input type="text" required placeholder="Your Name" />
+        <input type="email" required placeholder="Your Email" />
+        <textarea required placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="thanks-message"></div>
+    </section>
+  </main>
+  <footer>
+    <small>© 2025 FitLife</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
